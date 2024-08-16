@@ -1,0 +1,185 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            primary : '#10b981',
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<title>Belajar Portofolio</title>
+<body>
+  <!-- Navbar Start -->
+  <nav class="bg-emerald-100 mx-2 rounded-md">
+    <div class="max-w-6xl mx-auto px-4">
+      <div class="flex justify-between">
+        <div class="flex space-x-7">
+          <div>
+            <!-- Website Logo -->
+            <a href="#" class="flex items-center py-4 px-2">
+              <span class="font-semibold text-gray-500 text-lg">Fajar Nugraha</span>
+            </a>
+          </div>
+          <!-- Primary Navbar items -->
+          <div class="hidden md:flex items-center space-x-1">
+            <a href="#home" class="py-4 px-2 text-primary border-b-4 border-green-500 font-semibold">Home</a>
+            <a href="#about" class="py-4 px-2 text-gray-500 font-semibold hover:text-primary transition duration-300">Tentang Saya</a>
+            <a href="#contact" class="py-4 px-2 text-gray-500 font-semibold hover:text-primary transition duration-300">Hubungi Saya</a>
+          </div>
+          </div>
+        <!-- Mobile menu button -->
+        <div class="md:hidden flex items-center">
+          <button class="outline-none mobile-menu-button">
+          <svg class=" w-6 h-6 text-gray-500 hover:text-primary "
+              x-show="!showMenu"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- mobile menu -->
+    <div class="hidden mobile-menu">
+      <ul class="">
+        <li class="active"><a href="index.html" class="block text-sm px-2 py-4 text-white bg-primary font-semibold">Home</a></li>
+        <li><a href="#services" class="block text-sm px-2 py-4 hover:bg-primary transition duration-300">Services</a></li>
+        <li><a href="#about" class="block text-sm px-2 py-4 hover:bg-primary transition duration-300">About</a></li>
+        <li><a href="#contact" class="block text-sm px-2 py-4 hover:bg-primary transition duration-300">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <!-- Hero Section start -->
+   <section id="home" class="pt-12">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap ">
+            <div class="w-full self-center px-4 lg:w-1/2">
+              <h1 class="text-base font-semibold text-primary md:text-3xl">Halo Semua ✌️, Aku <br> <span class="text-slate-900 font-semibold text-2xl mt-2 md:text-4xl">Fajar Firdzatul Nugraha !</span></h1> 
+              <h2 class="mt-2 mb-2 text-base text-slate-900 font-semibold">Financial Expert | Anime Lover</h2>
+              <p class="font-medium text-slate-800 leading-relaxed mb-4">Website ini ku buat dalam rangka mempelajari bahasa pemrograman web, yang liat ini semoga diberikan kedamaian selalu yaa...</p>
+              <a href="#contact" class="pl-3 pr-3 pt-2 pb-2 mt-2 bg-primary rounded-full text-base hover:opacity-80 text-white font-semibold hover:shadow-xl duration-300" >Hubungi Saya</a>
+            </div>
+            <div class="w-full self-ends px-4 relative lg:w-1/2 md:scale-150">
+              <img src="img/fajar.png" alt="" class="max-w-full mx-auto">
+              <span class="absolute bottom-0 -z-10 left-1/2 -translate-x-1/2">
+                <svg width="500" height="300" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#10b981" d="M29.4,-27.7C42.3,-16.5,59.7,-8.3,64.8,5.1C69.9,18.4,62.5,36.8,49.7,44.5C36.8,52.1,18.4,49,-2.5,51.5C-23.4,54,-46.8,62.1,-51.3,54.4C-55.8,46.8,-41.5,23.4,-40.3,1.2C-39.1,-21,-51,-42,-46.5,-53.1C-42,-64.3,-21,-65.7,-6.4,-59.3C8.3,-53,16.5,-38.9,29.4,-27.7Z" transform="translate(100 100)" />
+                </svg>
+              </span>
+            </div>
+        </div>
+      </div>
+   </section>
+   <!-- Hero Section end -->
+
+   <!-- Section Tentang Saya Start -->
+    <section id="about" class="pt-20 pb-14 lg:pt-36">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap">
+          <div class="w-full mb-6 px-4 md:w-1/2">
+            <h4 class="text-xl text-primary font-semibold uppercase mb-3 md:text-3xl">Tentang Saya</h4>
+            <h2 class="text-2xl text-slate-900 font-semibold mb-2 md:text-3xl">Saya Seorang Fin. Acoountant 🫰</h2>
+            <p class="text-base ">Seorang Civil Cervant yang mempunyai keahlian di bidang keuangan, baik komersil atau pemerintahan. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos quo repudiandae maxime ab eaque, voluptatem architecto magni ipsam ad cumque!</p>
+          </div>
+          <div class="w-full mb-10 px-4 md:w-1/2 lg:pt-10">
+            <h3 class="text-2xl text-slate-800 font-semibold mb-3" >Mari Berteman</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore tempora dicta quisquam voluptate fugiat optio.</p>
+            <div class="flex items-center">
+              <!-- instagram -->
+               <a href="httmps://instagram.com/firdzatul" target="_blank" class=" mx-4 mt-5">
+                  <title>instagram</title>
+                  <svg role="img" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+               </a>
+              <!-- twitter -->
+              <a href="httmps://x.com/firdzatul" target="_blank" class=" mx-4 mt-5 ml-14">
+                  <title>X</title>
+                  <svg role="img" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+              </a>
+              <!-- NET  -->
+              <a href="httmps://x.com/firdzatul" target="_blank" class=" mx-4 mt-5 ml-14">
+                <title>Clover</title>
+                <svg role="img" class="w-6
+                " viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>4chan</title><path d="M11.07 8.82S9.803 1.079 5.145 1.097C2.006 1.109.78 4.124 3.055 4.802c0 0-2.698.973-2.698 2.697 0 1.725 4.274 3.54 10.713 1.32zm1.931 5.924s.904 7.791 5.558 7.991c3.136.135 4.503-2.82 2.262-3.604 0 0 2.74-.845 2.82-2.567.08-1.723-4.105-3.737-10.64-1.82zm-3.672-1.55s-7.532 2.19-6.952 6.813c.39 3.114 3.53 3.969 3.93 1.63 0 0 1.29 2.559 3.002 2.351 1.712-.208 3-4.67.02-10.794zm5.623-2.467s7.727-1.35 7.66-6.008c-.046-3.138-3.074-4.333-3.728-2.051 0 0-1-2.686-2.726-2.668-1.724.018-3.494 4.312-1.206 10.727z"/></svg>                    
+            </a>
+             <!-- XX -->
+            <a href="httmps://x.com/firdzatul" target="_blank" class=" mx-4 mt-5 ml-14">
+              <title>Next-Js</title>
+              <svg role="img" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Next.js</title><path d="M18.665 21.978C16.758 23.255 14.465 24 12 24 5.377 24 0 18.623 0 12S5.377 0 12 0s12 5.377 12 12c0 3.583-1.574 6.801-4.067 9.001L9.219 7.2H7.2v9.596h1.615V9.251l9.85 12.727Zm-3.332-8.533 1.6 2.061V7.2h-1.6v6.245Z"/></svg>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- Section Tentang Saya end -->
+
+   <!-- portofolio Start -->
+    <section class="pb-20 bg-slate-100">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap justify-center">
+          <span class="mt-5 text-2xl w-full text-center text-primary font-bold"
+          >PORTOFOLIO PEKERJAAN</span>
+          <div class="w-full mx-6 my-5 px-5 py-5 border-2 border-primary rounded-3xl md:w-1/4">
+            <img src="img/1.jpg" class="rounded-xl mb-5" alt="">
+            <h1 class="text-xl text-primary font-semibold mb-2">Bantuan Pemerintah Tahun 2020</h1>
+            <h2 class="text-base font-semibold mb-2 text-slate-800">Fin. Operator</h2>
+            <p class="text-base text-slate-700">Pada tahun 2020 Ditjen Yankes mendapatkan penugasan menjadi penyalu bantuan pemerintah berupa uang yang d tujukan untu Rumah Sakit Daerah dengan tujuna dibelikan menjadi alat kesehatan penanganan Covid-19. pada tahun itu saya ditugaskan menjadi operator keuangan untuk penyaluran dana sebesar Rp. 1.6 T </p>
+          </div>
+          <div class="w-full mx-6 my-5 px-5 py-5 border-2 border-primary rounded-3xl md:w-1/4">
+            <img src="img/2.jpg" class="rounded-xl mb-5" alt="">
+            <h1 class="text-xl text-primary font-semibold mb-2">Bantuan Pemerintah Tahun 2022</h1>
+            <h2 class="text-base font-semibold mb-2 text-slate-800">Fin. Operator</h2>
+            <p class="text-base text-slate-700">Seperti pada tahun 2020 Ditjen Pelayanan Kesehatan mendapatkan penugasan pengelolaan dana bantuan pemerintah dengan dana sebesar Rp. 2.2 T </p>
+          </div>
+          <div class="w-full mx-6 my-5 px-5 py-5 border-2 border-primary rounded-3xl md:w-1/4">
+            <img src="img/3.jpg" class="rounded-xl mb-5" alt="">
+            <h1 class="text-xl text-primary font-semibold mb-2">Bendahara Pemerintah Tahun 2024</h1>
+            <h2 class="text-base font-semibold mb-2 text-slate-800">Trea. Operator</h2>
+            <p class="text-base text-slate-700">Pada tahun 2024 saya ditugaskan menjadi bendahara pemerintah untuk menangani anggaran Tahun 2024</p>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!-- portofolio end -->
+
+   <!-- hubungi saya star -->
+    <section id="contact" class=" bg-emerald-900">
+      <div class="container flex justify-center text-center">
+        <div class="pt-11 pb-11 m-auto">
+          <h1 class="m-1 text-xl font-semibold uppercase text-slate-100">Hubungi Saya ❤️</h1>
+          <h2 class="text-slate-100">Nugraha.fajar98@gmail.com</h2>
+          <h2 class="text-slate-100"><a href="https://wa.me/6281219213396" target="_blank">081219213396</a></h2>
+          <h2 class="text-slate-100">@Copy Right 2024</h2>
+        </div>
+      </div>
+    </section>
+  <!-- hubungi saya end -->
+</body>
+
+<script>
+const btn = document.querySelector("button.mobile-menu-button");
+const menu = document.querySelector(".mobile-menu");
+
+btn.addEventListener("click", () => {
+  menu.classList.toggle("hidden");
+});
+</script>
+</html>
